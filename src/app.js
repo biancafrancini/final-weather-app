@@ -1,1 +1,1 @@
-alert("Hello World!");
+alert("How is the weather today?");
