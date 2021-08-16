@@ -14,10 +14,51 @@
     <title>My Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Vanilla Weather App</h1>
+    <div class="container-md displayWeatherCity">
+      <form class="row g-2" id="search-form">
+        <div class="col-auto">
+          <button
+            type="submit"
+            class="btn btn-primary mb-3"
+            id="searchCityButton"
+          >
+            Search 🔎
+          </button>
+        </div>
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden"
+            >Enter your city...</label
+          >
+          <input
+            class="placeholderEnterCity"
+            type="chose city"
+            class="form-control"
+            id="inputCity"
+            placeholder="Enter a city..."
+          />
+        </div>
+      </form>
+      <div class="container">
+        <h1>London</h1>
+        <p class="todayDate">Monday 16, 14:30</p>
 
-      <a href="" class="btn btn-primary"> Click Me to Discover it!</a>
+        <div class="container weatherDetails">
+          <div class="row row-cols-2 row-weatherDetails">
+            <div class="col weather-description">Cloudy</div>
+            <div class="col precipitation">Precipitation: 5%</div>
+            <div class="col degrees">
+              <strong>☁️ 16 </strong
+              ><span class="celsius-Fahrenheit">°C | °F</span>
+            </div>
+            <div class="col windSpeed">Wind: 10 mph</div>
+          </div>
+        </div>
+        <br />
+        <div class="code-creator">
+          Coded by
+          <a href="https://github.com/biancafrancini">Bianca Francini</a>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
