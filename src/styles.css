@@ -1,4 +1,12 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/626/original/images_weatherApp.jpg?1629536771");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .displayWeatherCity {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/625/original/ezgif.com-gif-maker.gif?1629536455");
   border: 2px solid rgb(16, 98, 165);
   margin-top: 50px;
   padding: 20px 30px 30px;
