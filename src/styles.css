@@ -51,6 +51,29 @@ h1 {
   color: rgb(9, 27, 66);
 }
 
+.degrees {
+  font-size: 30px;
+}
+
+.celsius-Fahrenheit {
+  font-size: 15px;
+  color: rgb(9, 27, 66);
+}
+
+.celsius {
+  text-decoration: none;
+}
+.celsius:hover {
+  text-decoration: underline;
+}
+
+.fahrenheit {
+  text-decoration: none;
+}
+
+.fahrenheit:hover {
+  text-decoration: underline;
+}
 .code-creator {
   display: block;
   padding: 30px 8px 0px 8px;
