@@ -6,7 +6,7 @@ body {
 }
 
 .displayWeatherCity {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/625/original/ezgif.com-gif-maker.gif?1629536455");
+  background-color: white;
   border: 2px solid rgb(16, 98, 165);
   margin-top: 50px;
   padding: 20px 30px 30px;
@@ -51,7 +51,11 @@ h1 {
   color: rgb(9, 27, 66);
 }
 
-.degrees {
+.weather-description {
+  text-transform: capitalize;
+}
+
+#temperature {
   font-size: 30px;
 }
 

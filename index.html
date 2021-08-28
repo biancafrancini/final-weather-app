@@ -11,6 +11,7 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>My Weather App</title>
   </head>
   <body>
@@ -39,20 +40,28 @@
         </div>
       </form>
       <div class="container">
-        <h1>London</h1>
+        <h1 id="city">London</h1>
         <p class="todayDate">Monday 16, 14:30</p>
         <div class="container cont-weatherDetails">
           <div class="row row-cols-2 row-weatherDetails">
             <div class="col weather-description">Cloudy</div>
-            <div class="col precipitation">Precipitation: 5%</div>
-            <div class="col degrees">
-              <strong>☁️ 16 </strong
+            <div class="col humidity">
+              Humidity: <span class="humidityLevel">5</span>%
+            </div>
+            <div class="col temperature">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                id="IconEmoji"
+              />
+              <strong id="degrees">16</strong
               ><span class="celsius-Fahrenheit">
                 <a href="" class="celsius">°C </a> |
                 <a href="" class="fahrenheit"> °F</a></span
               >
             </div>
-            <div class="col windSpeed">Wind: 10 mph</div>
+            <div class="col windSpeed">
+              Wind: <span class="windSpeedNumber"> 10 </span>Km/h
+            </div>
           </div>
         </div>
         <br />
