@@ -88,3 +88,31 @@ let celsius = document.querySelector(".celsius");
 celsius.addEventListener("click", showCelsiusTemperature);
 
 let celsiusTemperature = null;
+
+function displayWeekForecast() {
+  let forecastElement = document.querySelector("#week-forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+              <div class="weather-forecast-date">${day}</div>
+              <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                id="forecast-icons"
+                alt=""
+                width="50"
+              />
+              <div class="temperature-forecast">
+                <span class="max-temperature"> 20°</span> -
+                <span class="min-temperature">12°</span>
+              </div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayWeekForecast();
