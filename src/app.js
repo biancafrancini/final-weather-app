@@ -46,6 +46,15 @@ function formatDate(dt) {
   return `${dayNow} ${weekDate}, ${hours}:${minutes}`;
 }
 
+function displayForecast(response) {
+  console.log(response.data.daily);
+}
+function getForecast(coordinates) {
+  let apiKey = "15311e86ae668422281f7a4353f9243b";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayTemperatureToday(response) {
   console.log(response.data);
   celsiusTemperature = response.data.main.temp;
@@ -68,6 +77,8 @@ function displayTemperatureToday(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
   dateTodayElement.innerHTML = formatDate(response.data.dt);
+
+  getForecast(response.data.coord);
 }
 
 function turnsIntoFahrenheit(event) {
